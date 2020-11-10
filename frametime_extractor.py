@@ -9,7 +9,7 @@ while video.isOpened():
   	if ret == False : break
   	
   	with open('times.txt', 'a') as the_file:
-    		the_file.write(str(int(video.get(cv2.CAP_PROP_POS_MSEC)*1000000)) + ' ' + str(i).zfill(6) + '.png\n') #timestamp in nanosec
+    		the_file.write(str(int(video.get(cv2.CAP_PROP_POS_MSEC))) + ' ' + str(i).zfill(6) + '.png\n') #timestamp in millisec
     		
   	
   	cv2.imwrite(str(i).zfill(6)+'.png',frame)
