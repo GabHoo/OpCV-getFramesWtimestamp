@@ -1,6 +1,6 @@
 import cv2
 
-video = cv2.VideoCapture('RoomShoot_2_P20_frontcamera.mp4')
+video = cv2.VideoCapture('INSERT_PATH_OR_NAME_OF_VIDEOFILE_HERE.mp4')
 i=000000
 print('FPS= ' + str(video.get(cv2.CAP_PROP_FPS)) + '\n')
 
