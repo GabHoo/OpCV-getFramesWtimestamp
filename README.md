@@ -10,3 +10,5 @@ You can change the format of the output frames file to jpg just by changing the 
 You can also get the timestamp in milli micro o just seconds by changing the multiplyng factor.
 
 Also you can get original coloured frames by commenting the gray-scale line
+
+Moreover you can increse the contrast of the pictures by uncommenting such line
