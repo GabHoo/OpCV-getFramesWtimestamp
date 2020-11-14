@@ -10,6 +10,8 @@ while video.isOpened():
   	if ret == False : break
   	
   	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) #get grayscale frames
+    
+    #gray = cv2.convertScaleAbs(gray, alpha=1.5, beta=0)  #For eventual increase of the contrast of the frame
   	
   	cv2.imwrite(str(i).zfill(6)+'.png',gray)
   	
